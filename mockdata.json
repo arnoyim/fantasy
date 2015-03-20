@@ -1,0 +1,42 @@
+[
+    {
+        "_id": "1",
+        "entries": 34,
+        "max_entries": 100,
+        "prize": 100,
+        "start": "2015-03-20 10:00:00",
+        "entry_fee": 5,
+        "name": "EU LCS Beginner Practice W8D2",
+        "win": "39"
+    },
+    {
+        "_id": "2",
+        "entries": 54,
+        "max_entries": 200,
+        "prize": 1000,
+        "entry_fee": 15,
+        "start": "2015-03-22 10:00:00",
+        "name": "Catalyn headshot NA W3D1",
+        "win": "100"
+    },
+    {
+        "_id": "3",
+        "entries": 12,
+        "max_entries": 100,
+        "prize": 200,
+        "entry_fee": "free",
+        "start": "2015-03-23 10:00:00",
+        "name": "50/50 [50% win] EU W3D2",
+        "win": "50"
+    },
+    {
+        "_id": "4",
+        "entries": 234,
+        "max_entries": 4000,
+        "prize": 10000,
+        "entry_fee": 100,
+        "start": "2015-03-20 10:00:00",
+        "name": "John Doe(me) EU W3D2",
+        "win": "12"
+    }
+]

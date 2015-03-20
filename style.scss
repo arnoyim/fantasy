@@ -1,0 +1,76 @@
+body, html {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/**
+ * So that we can set padding on things with 100% width.
+ */
+@mixin borderbox() {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/**
+ * Default app styling.
+ */
+#app{
+	@include borderbox();
+	height: 100%;
+	width: 75%;
+	/**
+ 	 * Header styling.
+ 	 */
+	.header {
+		max-height: 3em;
+		display: inline-table;
+		width: 100%;
+		padding: 0 0 1em;
+		border-bottom: 1px solid black;
+		.navigation {
+			list-style: none;
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 0.8em;
+			padding: 0 0 0 20em;
+			li {
+				padding: 0 1.5em;
+				display: table-cell;
+				p {
+					display: inline-block;
+					background-color:#189e74;
+					border-radius: 2em;
+					color: #ffffff;
+					padding: 0 0.5em;
+				}
+			}
+			li.notify {
+				color: #189e74;
+			}
+			li.selected {
+				padding: 0.5em;
+				border: 2px solid #189e74;
+				border-radius: 2em;
+				color: #189e74;
+			}
+		}
+		.vulcun {
+			display: inline-table;
+			padding: 0 0 0 1em;
+			width:5em;
+			img {
+				height: 2.5em;
+				width: 2.5em;
+			}
+			p {
+				display:table-cell;
+				font-size: 1.5em;
+				padding: 0 0 0 0.6em;
+				margin:0;
+				vertical-align:middle;
+			}
+		}
+	}
+}
