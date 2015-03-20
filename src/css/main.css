@@ -1,50 +1,45 @@
 body, html {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
-/**
- * So that we can set padding on things with 100% width.
- */
+table {
+  border-spacing: 0; }
+
 /**
  * Default app styling.
  */
 #app {
-  box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   height: 100%;
   width: 75%;
   	/**
    	 * Header styling.
    	 */ }
   #app .header {
-    max-height: 3em;
     display: inline-table;
-    width: 100%;
+    max-height: 3em;
     padding: 0 0 1em;
-    border-bottom: 1px solid black; }
+    width: 100%; }
     #app .header .navigation {
-      list-style: none;
       display: table-cell;
-      vertical-align: middle;
       font-size: 0.8em;
-      padding: 0 0 0 20em; }
+      list-style: none;
+      padding: 0 0 0 20em;
+      vertical-align: middle; }
       #app .header .navigation li {
         padding: 0 1.5em;
         display: table-cell; }
         #app .header .navigation li p {
-          display: inline-block;
           background-color: #189e74;
           border-radius: 2em;
           color: #ffffff;
-          padding: 0 0.5em; }
+          display: inline;
+          padding: 0.1em 0.5em; }
       #app .header .navigation li.notify {
         color: #189e74; }
       #app .header .navigation li.selected {
-        padding: 0.5em;
-        border: 2px solid #189e74;
         border-radius: 2em;
-        color: #189e74; }
+        border: 2px solid #189e74;
+        color: #189e74;
+        padding: 0.5em; }
     #app .header .vulcun {
       display: inline-table;
       padding: 0 0 0 1em;
@@ -55,65 +50,83 @@ body, html {
       #app .header .vulcun p {
         display: table-cell;
         font-size: 1.5em;
-        padding: 0 0 0 0.6em;
         margin: 0;
+        padding: 0 0 0 0.6em;
         vertical-align: middle; }
   #app .games {
-    width: 100%;
-    display: inline-table;
     background-color: #f7f7f7;
-    font-size: 0.8em; }
+    display: inline-table;
+    font-size: 0.8em;
+    width: 100%; }
     #app .games ul {
       margin: 0 0 0 0.5em;
       padding: 0; }
       #app .games ul li {
         color: #919191;
         display: table-cell;
-        padding: 1em 1em;
         list-style: none;
+        padding: 1em 1em;
         vertical-align: middle; }
       #app .games ul li.selected {
         background-color: #394141;
-        height: 100%;
-        color: #189e74; }
+        color: #189e74;
+        height: 100%; }
     #app .games p {
+      color: #1fca95;
       display: table-cell;
       margin: 0;
       padding: 0 1em;
       text-align: right;
-      color: #1fca95;
       vertical-align: middle; }
   #app .price {
-    width: 100%;
+    background-color: #394141;
     display: inline-table;
-    background-color: #394141; }
+    width: 100%; }
     #app .price ul {
+      float: right;
       margin: 0 0 0 0.5em;
-      padding: 0.5em 1em;
-      float: right; }
+      padding: 0.5em 1em; }
       #app .price ul li {
         color: #919191;
         display: table-cell;
+        font-size: 0.8em;
         list-style: none;
         padding: 0 1.5em;
-        vertical-align: middle;
-        font-size: 0.8em; }
-      #app .price ul li.selected {
+        vertical-align: middle; }
+      #app .price ul .selected {
         background-color: #189e74;
-        padding: 0.5em 2em;
         border-radius: 2em;
-        color: #ffffff; }
+        color: #ffffff;
+        padding: 0.5em 2em; }
   #app .content #contests {
     width: 100%; }
     #app .content #contests th {
+      color: #919191;
       font-size: 0.8em;
       font-weight: 400;
-      text-align: left;
-      padding: 0.5em; }
+      padding: 0.5em;
+      text-align: left; }
     #app .content #contests tr {
+      border-bottom: 1em solid #919191;
       font-size: 0.9em;
       font-weight: 700;
-      text-align: left;
-      padding: 0.5em; }
+      padding: 1em 0.5em;
+      text-align: left; }
+    #app .content #contests .row {
+      height: 5em; }
+    #app .content #contests .highlighted {
+      background-color: #E8FBF5; }
+    #app .content #contests .enter {
+      background-color: #189E74;
+      background-color: #189E74;
+      border-radius: 3em;
+      color: #ffffff;
+      margin: auto;
+      padding: 0.8em 0;
+      text-align: center;
+      width: 80%; }
+
+#chat {
+  border: 2px solid red; }
 
 /*# sourceMappingURL=main.css.map */

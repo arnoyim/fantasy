@@ -1,15 +1,8 @@
 body, html {
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
-/**
- * So that we can set padding on things with 100% width.
- */
-@mixin borderbox() {
-    box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+table {
+	border-spacing: 0;
 }
 
 
@@ -17,43 +10,41 @@ body, html {
  * Default app styling.
  */
 #app{
-	@include borderbox();
 	height: 100%;
 	width: 75%;
 	/**
  	 * Header styling.
  	 */
 	.header {
-		max-height: 3em;
 		display: inline-table;
-		width: 100%;
+		max-height: 3em;
 		padding: 0 0 1em;
-		border-bottom: 1px solid black;
+		width: 100%;
 		.navigation {
-			list-style: none;
 			display: table-cell;
-			vertical-align: middle;
 			font-size: 0.8em;
+			list-style: none;
 			padding: 0 0 0 20em;
+			vertical-align: middle;
 			li {
 				padding: 0 1.5em;
 				display: table-cell;
 				p {
-					display: inline-block;
 					background-color:#189e74;
 					border-radius: 2em;
 					color: #ffffff;
-					padding: 0 0.5em;
+					display: inline;
+					padding: 0.1em 0.5em;
 				}
 			}
 			li.notify {
 				color: #189e74;
 			}
 			li.selected {
-				padding: 0.5em;
-				border: 2px solid #189e74;
 				border-radius: 2em;
+				border: 2px solid #189e74;
 				color: #189e74;
+				padding: 0.5em;
 			}
 		}
 		.vulcun {
@@ -67,63 +58,63 @@ body, html {
 			p {
 				display:table-cell;
 				font-size: 1.5em;
-				padding: 0 0 0 0.6em;
 				margin:0;
+				padding: 0 0 0 0.6em;
 				vertical-align: middle;
 			}
 		}
 	}
 	.games {
-		width: 100%;
-		display: inline-table;
 		background-color: #f7f7f7;
+		display: inline-table;
 		font-size: 0.8em;
+		width: 100%;
 		ul {
 			margin: 0 0 0 0.5em;
 			padding: 0;
 			li {
 				color: #919191;
 				display: table-cell;
-				padding: 1em 1em;			
 				list-style: none;
+				padding: 1em 1em;			
 				vertical-align: middle;
 			}
 			li.selected {
 				background-color: #394141;
-				height: 100%;
 				color: #189e74;
+				height: 100%;
 			}
 		}
 		p {
+			color: #1fca95;
 			display: table-cell;
 			margin: 0;
 			padding: 0 1em;
 			text-align: right;
-			color: #1fca95;
 			vertical-align: middle;
 		}
 	}
 	.price {
-		width: 100%;
-		display: inline-table;
 		background-color: #394141;
+		display: inline-table;
+		width: 100%;
 		ul {
+			float: right;
 			margin: 0 0 0 0.5em;
 			padding: 0.5em 1em;
-			float: right;
 			li {
 				color: #919191;
 				display: table-cell;		
+				font-size: 0.8em;
 				list-style: none;
 				padding: 0 1.5em;
 				vertical-align: middle;
-				font-size: 0.8em;
 			}
-			li.selected {
+			.selected {
 				background-color: #189e74;
-				padding: 0.5em 2em;
 				border-radius: 2em;
 				color: #ffffff;
+				padding: 0.5em 2em;
 			}
 		}
 	}
@@ -131,17 +122,38 @@ body, html {
 		#contests {
 			width: 100%;
 			th {
+				color: #919191;
 				font-size: 0.8em;
 				font-weight: 400;
-				text-align: left;
 				padding: 0.5em;
+				text-align: left;
 			}
 			tr {
+				border-bottom: 1em solid #919191;
 				font-size: 0.9em;
 				font-weight: 700;
+				padding: 1em 0.5em;
 				text-align: left;
-				padding: 0.5em;
+			}
+			.row {
+				height:5em;
+			}
+			.highlighted {
+				background-color: #E8FBF5;
+			}
+			.enter {
+				background-color: #189E74;
+			  	background-color: #189E74;
+			  	border-radius: 3em;
+			  	color: #ffffff;
+			  	margin: auto;
+			  	padding: 0.8em 0;
+			  	text-align: center;
+			  	width: 80%;
 			}
 		}
 	}
+}
+#chat {
+	border: 2px solid red;
 }

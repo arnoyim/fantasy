@@ -28,11 +28,12 @@ $(function() {
 		var entryFee = dataInfo.entry_fee;
 		var win = dataInfo.win;
 		var row = $('<tr></tr>').addClass('row').html('<td>' + name + '</td>' +
-																 '<td>' + '$ ' +  prize + '</td>' +
-																 '<td>' + entries + '/' + maxEntries + '</td>' +
-																 '<td>' + win + '%' + '</td>' +
-																 '<td>' + '$ ' + entryFee + '</td>' +
-																 '<td>' + diffDays + ' Days' + '</td>');
+			 '<td>' + '$ ' +  prize + '</td>' +
+			 '<td>' + entries + '/' + maxEntries + '</td>' +
+			 '<td>' + win + '%' + '</td>' +
+			 '<td>' + '$ ' + entryFee + '</td>' +
+			 '<td>' + diffDays + ' Days' + '</td>' +
+			 '<td>' + '<p class="enter">' +'ENTER CONTEST' + '</p>' + '</td>');
 		table.append(row);
 	};
 
