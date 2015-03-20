@@ -4,7 +4,7 @@
         "entries": 34,
         "max_entries": 100,
         "prize": 100,
-        "start": "2015-03-20 10:00:00",
+        "start": "2015-03-25T10:00:00",
         "entry_fee": 5,
         "name": "EU LCS Beginner Practice W8D2",
         "win": "39"
@@ -15,7 +15,7 @@
         "max_entries": 200,
         "prize": 1000,
         "entry_fee": 15,
-        "start": "2015-03-22 10:00:00",
+        "start": "2015-03-22T10:00:00",
         "name": "Catalyn headshot NA W3D1",
         "win": "100"
     },
@@ -24,8 +24,8 @@
         "entries": 12,
         "max_entries": 100,
         "prize": 200,
-        "entry_fee": "free",
-        "start": "2015-03-23 10:00:00",
+        "entry_fee": 5,
+        "start": "2015-03-23T10:00:00",
         "name": "50/50 [50% win] EU W3D2",
         "win": "50"
     },
@@ -35,7 +35,7 @@
         "max_entries": 4000,
         "prize": 10000,
         "entry_fee": 100,
-        "start": "2015-03-20 10:00:00",
+        "start": "2015-03-27T10:00:00",
         "name": "John Doe(me) EU W3D2",
         "win": "12"
     }

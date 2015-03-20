@@ -58,5 +58,62 @@ body, html {
         padding: 0 0 0 0.6em;
         margin: 0;
         vertical-align: middle; }
+  #app .games {
+    width: 100%;
+    display: inline-table;
+    background-color: #f7f7f7;
+    font-size: 0.8em; }
+    #app .games ul {
+      margin: 0 0 0 0.5em;
+      padding: 0; }
+      #app .games ul li {
+        color: #919191;
+        display: table-cell;
+        padding: 1em 1em;
+        list-style: none;
+        vertical-align: middle; }
+      #app .games ul li.selected {
+        background-color: #394141;
+        height: 100%;
+        color: #189e74; }
+    #app .games p {
+      display: table-cell;
+      margin: 0;
+      padding: 0 1em;
+      text-align: right;
+      color: #1fca95;
+      vertical-align: middle; }
+  #app .price {
+    width: 100%;
+    display: inline-table;
+    background-color: #394141; }
+    #app .price ul {
+      margin: 0 0 0 0.5em;
+      padding: 0.5em 1em;
+      float: right; }
+      #app .price ul li {
+        color: #919191;
+        display: table-cell;
+        list-style: none;
+        padding: 0 1.5em;
+        vertical-align: middle;
+        font-size: 0.8em; }
+      #app .price ul li.selected {
+        background-color: #189e74;
+        padding: 0.5em 2em;
+        border-radius: 2em;
+        color: #ffffff; }
+  #app .content #contests {
+    width: 100%; }
+    #app .content #contests th {
+      font-size: 0.8em;
+      font-weight: 400;
+      text-align: left;
+      padding: 0.5em; }
+    #app .content #contests tr {
+      font-size: 0.9em;
+      font-weight: 700;
+      text-align: left;
+      padding: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */
